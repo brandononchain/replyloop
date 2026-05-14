@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #FAF9F7;
+  --bg-secondary: #F5F3EF;
+  --bg-elevated: #FFFFFF;
+  --border: #E8E5DE;
+  --border-hover: #D4D0C8;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B6560;
+  --text-muted: #9B9590;
+  --accent: #D97706;
+  --accent-soft: rgba(217, 119, 6, 0.06);
+  --positive: #16A34A;
+  --negative: #DC2626;
+  --star: #D97706;
+}
+
+::selection {
+  background: rgba(217, 119, 6, 0.12);
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Newsreader', 'Georgia', serif;
+}
+
+.sans {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.mono {
+  font-family: 'DM Mono', 'Menlo', monospace;
+}
