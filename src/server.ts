@@ -377,6 +377,7 @@ const transportMode = process.argv.includes("--sse") ? "sse" : "stdio";
 if (transportMode === "sse") {
   const app = express();
   app.use(cors());
+  app.use(express.json());
 
   const transports = new Map<string, SSEServerTransport>();
 
