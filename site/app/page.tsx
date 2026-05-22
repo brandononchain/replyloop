@@ -18,6 +18,9 @@ export default function Home() {
           cursor: pointer;
           transition: all 0.2s ease;
           letter-spacing: 0.01em;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
         }
         .btn-primary:hover { background: #333; transform: translateY(-1px); }
         .btn-ghost {
@@ -31,6 +34,9 @@ export default function Home() {
           border-radius: 999px;
           cursor: pointer;
           transition: all 0.2s ease;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
         }
         .btn-ghost:hover { border-color: #D4D0C8; background: #F5F3EF; }
         .card {
@@ -43,6 +49,19 @@ export default function Home() {
         .card:hover { border-color: #D4D0C8; }
         @media (max-width: 768px) {
           .grid-3 { grid-template-columns: 1fr !important; }
+        }
+        @media (max-width: 640px) {
+          .hero-buttons {
+            flex-direction: column !important;
+            width: 100%;
+          }
+          .hero-buttons .btn-primary,
+          .hero-buttons .btn-ghost {
+            width: 100%;
+            text-align: center;
+            padding: 14px 28px;
+          }
+          .card { padding: 24px; }
         }
       `}</style>
       <Nav />

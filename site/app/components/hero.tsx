@@ -39,7 +39,7 @@ export function Hero() {
             Echoback connects Claude to Google, Yelp, Trustpilot, and G2.
             Read reviews. Respond instantly. Spot trends. All from one chat.
           </p>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+          <div className="hero-buttons" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button className="btn-primary">Connect to Claude</button>
             <a href="#how-it-works" className="btn-ghost" style={{ textDecoration: "none" }}>
               See how it works
