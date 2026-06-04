@@ -403,8 +403,8 @@ if (transportMode === "sse") {
   app.get("/health", (_, res) => res.json({ status: "ok", server: "echoback", version: "1.0.0" }));
 
   const port = parseInt(process.env.PORT || "3001");
-  app.listen(port, () => {
-    console.log(`Echoback MCP server (SSE) running on port ${port}`);
+  app.listen(port, "0.0.0.0", () => {
+    console.log(`Echoback MCP server (SSE) listening on 0.0.0.0:${port}`);
     console.log(`Connect URL: http://localhost:${port}/sse`);
   });
 } else {
