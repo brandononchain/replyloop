@@ -395,7 +395,8 @@ if (transportMode === "sse") {
       res.status(404).json({ error: "Session not found" });
       return;
     }
-    await transport.handlePostMessage(req, res);
+    // express.json() already consumed the body stream; pass it explicitly.
+    await transport.handlePostMessage(req, res, req.body);
   });
 
   // Health check
