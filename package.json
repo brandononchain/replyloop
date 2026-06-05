@@ -1,27 +1,30 @@
 {
   "name": "replyloop",
-  "version": "1.0.0",
-  "description": "Reputation management MCP connector for Claude",
+  "version": "2.0.0",
+  "description": "Reputation management MCP server. Self-host (free) or use the hosted version at mcp.replyloop.dev.",
   "type": "module",
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "dev:hosted": "HOSTED_MODE=true tsx watch src/server.ts --sse",
     "build": "tsc",
-    "start": "node dist/server.js --sse"
+    "start": "node dist/server.js --sse",
+    "sync": "tsx src/sync/worker.ts"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "@supabase/supabase-js": "^2.46.1",
+    "zod": "^3.23.8",
     "googleapis": "^144.0.0",
-    "zod": "^3.23.8"
+    "express": "^4.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
     "tsx": "^4.19.0",
-    "typescript": "^5.6.0"
+    "@types/node": "^22.0.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17"
   }
 }
