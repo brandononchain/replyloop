@@ -66,7 +66,7 @@ export function Nav() {
       }}>
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: 6, textDecoration: "none", color: "inherit" }}>
           <span style={{ fontSize: 18, fontWeight: 600, letterSpacing: "-0.01em" }}>
-            echoback
+            replyloop
           </span>
           <span style={{
             width: 6, height: 6, borderRadius: "50%", background: "var(--accent)",
@@ -79,7 +79,7 @@ export function Nav() {
           <Link href="/privacy" className="btn-ghost" style={{ padding: "8px 20px", fontSize: 14, textDecoration: "none" }}>
             Privacy
           </Link>
-          <a href="https://github.com/brandononchain/echoback" target="_blank" rel="noopener"
+          <a href="https://github.com/brandononchain/replyloop" target="_blank" rel="noopener"
             className="btn-ghost" style={{ padding: "8px 20px", fontSize: 14, textDecoration: "none" }}>
             Docs
           </a>
@@ -114,7 +114,7 @@ export function Nav() {
             style={{ padding: "14px 28px", fontSize: 16, textDecoration: "none" }}>
             Privacy
           </Link>
-          <a href="https://github.com/brandononchain/echoback" target="_blank" rel="noopener"
+          <a href="https://github.com/brandononchain/replyloop" target="_blank" rel="noopener"
             className="btn-ghost"
             style={{ padding: "14px 28px", fontSize: 16, textDecoration: "none" }}>
             Docs

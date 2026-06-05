@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-// Echoback: Demo Platform Adapter
+// Replyloop: Demo Platform Adapter
 // Realistic mock data for testing and demo mode
 // ─────────────────────────────────────────────────────────────────
 

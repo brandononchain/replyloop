@@ -29,15 +29,15 @@ export function Hero() {
           }}>
             Your reviews.<br />
             <span style={{ fontStyle: "italic", color: "var(--text-secondary)" }}>
-              One conversation away.
+              Answered, on a loop.
             </span>
           </h1>
           <p className="sans" style={{
             fontSize: 17, lineHeight: 1.6, color: "var(--text-secondary)",
             marginBottom: 32, maxWidth: 480,
           }}>
-            Echoback connects Claude to Google, Yelp, Trustpilot, and G2.
-            Read reviews. Respond instantly. Spot trends. All from one chat.
+            Every review answered, by an agent that sounds like you.
+            Replyloop connects Claude to Google, Yelp, Trustpilot, and G2 — read, reply, and spot trends from one chat.
           </p>
           <div className="hero-buttons" style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button className="btn-primary">Connect to Claude</button>
@@ -69,7 +69,7 @@ export function Hero() {
             <span style={{
               width: 6, height: 6, borderRadius: "50%", background: "var(--positive)",
             }} />
-            echoback connected
+            replyloop connected
           </div>
           <div style={{ padding: "20px 24px", display: "flex", flexDirection: "column", gap: 16 }}>
             {CONVERSATION.map((msg, i) => (
@@ -84,7 +84,7 @@ export function Hero() {
                   <span className="sans" style={{
                     fontSize: 12, fontWeight: 500, color: "var(--text-secondary)",
                   }}>
-                    {msg.role === "user" ? "B" : "E"}
+                    {msg.role === "user" ? "B" : "R"}
                   </span>
                 </div>
                 <div className="sans" style={{

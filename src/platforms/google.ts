@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-// Echoback: Google Business Profile Adapter
+// Replyloop: Google Business Profile Adapter
 // Uses Google My Business API v4 for review management
 // ─────────────────────────────────────────────────────────────────
 

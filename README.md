@@ -1,8 +1,8 @@
-# echoback.
+# replyloop.
 
 > Reputation management connector for Claude. Own every word they say about you.
 
-Echoback is an MCP server that gives Claude read/write access to your review platforms. Read reviews, respond to them, analyze trends, and get alerts — all from a single conversation.
+Replyloop is an MCP server that gives Claude read/write access to your review platforms. Read reviews, respond to them, analyze trends, and get alerts — all from a single conversation.
 
 ## Quick Start
 

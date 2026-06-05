@@ -2,22 +2,22 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Echoback — Reputation management inside Claude",
+  title: "Replyloop — Every review answered, in your voice",
   description:
-    "Connect Claude to Google, Yelp, Trustpilot, and G2. Read reviews, respond instantly, spot trends. All from one conversation.",
+    "Every review answered, by an agent that sounds like you. Connect Claude to Google, Yelp, Trustpilot, and G2 — read, reply, and spot trends from one conversation.",
   openGraph: {
-    title: "Echoback — Your reviews, one conversation away",
+    title: "Replyloop — Every review answered, in your voice",
     description:
-      "Reputation management connector for Claude. Read, respond, and analyze reviews across every platform from a single chat.",
-    url: "https://echoback.dev",
-    siteName: "Echoback",
+      "Every review answered, by an agent that sounds like you. Reputation management for Claude.",
+    url: "https://replyloop.dev",
+    siteName: "Replyloop",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Echoback — Reputation management inside Claude",
+    title: "Replyloop — Every review answered, in your voice",
     description:
-      "Connect Claude to your review platforms. Read, respond, analyze. All from one conversation.",
+      "Every review answered, by an agent that sounds like you. Connect Claude to your review platforms.",
   },
 };
 

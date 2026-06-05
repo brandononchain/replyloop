@@ -41,7 +41,7 @@ const STEPS = [
   {
     step: "01",
     title: "Add the connector",
-    desc: "Paste the Echoback URL into Claude Settings → Connectors. One field, one click.",
+    desc: "Paste the Replyloop URL into Claude Settings → Connectors. One field, one click.",
   },
   {
     step: "02",
@@ -357,7 +357,7 @@ export function CTA() {
             fontSize: 16, color: "var(--text-secondary)",
             marginBottom: 32, maxWidth: 420, margin: "0 auto 32px",
           }}>
-            Connect Echoback to Claude in under a minute. Your first 14 days are free.
+            Connect Replyloop to Claude in under a minute. Your first 14 days are free.
           </p>
           <button className="btn-primary" style={{ fontSize: 16, padding: "14px 36px" }}>
             Connect to Claude
@@ -384,13 +384,13 @@ export function Footer() {
       color: "var(--text-muted)",
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-        <span style={{ fontWeight: 500, color: "var(--text-secondary)" }}>echoback</span>
+        <span style={{ fontWeight: 500, color: "var(--text-secondary)" }}>replyloop</span>
         <span style={{ width: 5, height: 5, borderRadius: "50%", background: "var(--accent)" }} />
       </div>
       <div style={{ display: "flex", gap: 24 }}>
         <a href="/privacy" style={{ color: "var(--text-muted)", textDecoration: "none" }}>Privacy</a>
         <a
-          href="https://github.com/brandononchain/echoback"
+          href="https://github.com/brandononchain/replyloop"
           target="_blank"
           rel="noopener"
           style={{ color: "var(--text-muted)", textDecoration: "none" }}

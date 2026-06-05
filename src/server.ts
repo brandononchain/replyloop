@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-// Echoback MCP Server
+// Replyloop MCP Server
 // Reputation management connector for Claude
 // ─────────────────────────────────────────────────────────────────
 
@@ -26,7 +26,7 @@ const adapter = getAdapter();
 // ─── MCP Server ──────────────────────────────────────────────────
 
 const server = new McpServer({
-  name: "echoback",
+  name: "replyloop",
   version: "1.0.0",
 });
 
@@ -363,7 +363,7 @@ server.tool(
       content: [
         {
           type: "text" as const,
-          text: `Connected Review Platforms:\n\n${formatted}\n\nTo connect additional platforms, visit your Echoback dashboard.`,
+          text: `Connected Review Platforms:\n\n${formatted}\n\nTo connect additional platforms, visit your Replyloop dashboard.`,
         },
       ],
     };
@@ -400,15 +400,15 @@ if (transportMode === "sse") {
   });
 
   // Health check
-  app.get("/health", (_, res) => res.json({ status: "ok", server: "echoback", version: "1.0.0" }));
+  app.get("/health", (_, res) => res.json({ status: "ok", server: "replyloop", version: "1.0.0" }));
 
   const port = parseInt(process.env.PORT || "3001");
   app.listen(port, "0.0.0.0", () => {
-    console.log(`Echoback MCP server (SSE) listening on 0.0.0.0:${port}`);
+    console.log(`Replyloop MCP server (SSE) listening on 0.0.0.0:${port}`);
     console.log(`Connect URL: http://localhost:${port}/sse`);
   });
 } else {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.error("Echoback MCP server running on stdio");
+  console.error("Replyloop MCP server running on stdio");
 }

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────
-// Echoback: Review Analysis
+// Replyloop: Review Analysis
 // Keyword extraction and trend analysis from review text
 // ─────────────────────────────────────────────────────────────────
 

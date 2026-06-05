@@ -32,17 +32,17 @@ export default function Privacy() {
         <p style={{ color: "#9B9590", marginBottom: 40 }}>Last updated: May 14, 2026</p>
 
         <h2 style={{ fontSize: 18, fontWeight: 500, marginTop: 32, marginBottom: 8, color: "#1A1A1A" }}>
-          What Echoback does
+          What Replyloop does
         </h2>
         <p style={{ marginBottom: 16 }}>
-          Echoback is an MCP connector that gives Claude access to your review platform accounts (Google Business Profile, Yelp, Trustpilot, G2, and others). It reads and writes review data on your behalf when you interact with Claude.
+          Replyloop is an MCP connector that gives Claude access to your review platform accounts (Google Business Profile, Yelp, Trustpilot, G2, and others). It reads and writes review data on your behalf when you interact with Claude.
         </p>
 
         <h2 style={{ fontSize: 18, fontWeight: 500, marginTop: 32, marginBottom: 8, color: "#1A1A1A" }}>
           Data we access
         </h2>
         <p style={{ marginBottom: 16 }}>
-          When you connect a review platform, Echoback accesses your business reviews, ratings, reviewer names (as displayed publicly on the platform), and your existing responses. We only access data necessary to provide the service.
+          When you connect a review platform, Replyloop accesses your business reviews, ratings, reviewer names (as displayed publicly on the platform), and your existing responses. We only access data necessary to provide the service.
         </p>
 
         <h2 style={{ fontSize: 18, fontWeight: 500, marginTop: 32, marginBottom: 8, color: "#1A1A1A" }}>
@@ -63,21 +63,21 @@ export default function Privacy() {
           Third-party services
         </h2>
         <p style={{ marginBottom: 16 }}>
-          Echoback connects to review platforms via their official APIs (Google Business Profile API, Yelp Fusion API, Trustpilot Business API, G2 API). Your data is subject to each platform's own privacy policies. Echoback operates as an MCP server within Anthropic's Claude ecosystem.
+          Replyloop connects to review platforms via their official APIs (Google Business Profile API, Yelp Fusion API, Trustpilot Business API, G2 API). Your data is subject to each platform's own privacy policies. Replyloop operates as an MCP server within Anthropic's Claude ecosystem.
         </p>
 
         <h2 style={{ fontSize: 18, fontWeight: 500, marginTop: 32, marginBottom: 8, color: "#1A1A1A" }}>
           Disconnecting
         </h2>
         <p style={{ marginBottom: 16 }}>
-          You can disconnect Echoback at any time through Claude Settings → Connectors. Upon disconnection, we delete all stored tokens associated with your account within 24 hours.
+          You can disconnect Replyloop at any time through Claude Settings → Connectors. Upon disconnection, we delete all stored tokens associated with your account within 24 hours.
         </p>
 
         <h2 style={{ fontSize: 18, fontWeight: 500, marginTop: 32, marginBottom: 8, color: "#1A1A1A" }}>
           Contact
         </h2>
         <p style={{ marginBottom: 16 }}>
-          Questions about this policy? Reach out at privacy@echoback.dev.
+          Questions about this policy? Reach out at privacy@replyloop.dev.
         </p>
       </section>
       <Footer />
